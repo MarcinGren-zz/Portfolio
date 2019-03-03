@@ -67,3 +67,55 @@
   letter-spacing: 0.4em;
 }
 
+/* ABOUT SECTION */
+.about_title {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5em;
+  border-bottom: 1px solid black;
+  width: 70%;
+  margin: auto;
+}
+
+.about_container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.photo_container {
+  padding: 40px; 
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.about_icons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon_container {
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.about_icon {
+  padding-right: 10px;
+}
+
+.about_text {
+  width: 70%;
+  margin: auto;
+}
+
+.icons_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

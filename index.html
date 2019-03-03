@@ -8,6 +8,7 @@
   <title>Marcin Gren - Portfolio</title>
 
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -40,15 +41,34 @@
     </div>
   </header>
   <section class="about" id="about">
+    <h2 class="about_title">About me</h2>
     <div class="about_container">
-      <div class="about_picture">
-        <img src="./photo.jpg" class="about_logo" alt="about logo">
+      <div class="photo_container">
+        <img src="./photo.jpg" class="photo" alt="about logo">
       </div>
-      <div class="Dabout_desc">
-        <h2 class="about_title">About me</h2>
-        <p class="about_text">
-          Desc about me here </p>
-      </div>
+      <ul class="about_icons">
+        <div class="icons_column">
+          <li class="icon_container"><i class="about_icon fas fa-user"></i>Marcin Greń</li>
+          <li class="icon_container"><i class="about_icon fas fa-globe-europe"></i>Polish</li>
+          <li class="icon_container"><i class="about_icon fas fa-birthday-cake"></i>11.12.1993</li>
+        </div>
+        <div class="icons_column">
+          <li class="icon_container"><i class="about_icon fab fa-github"></i>Github</li>
+          <li class="icon_container"><i class="about_icon fab fa-linkedin"></i>Linkedin</li>
+          <li class="icon_container"><i class="about_icon fas fa-file"></i>CV</li>
+        </div>
+      </ul>
+    </div>
+    <div class="about_desc">
+      <p class="about_text">
+        Hi! My name is Marcin. I was born in Poland in 1993. I have a bachelor's degree in English Philology from University
+      of Silesia. I have been working as a Software Engineer (QA) for over a year (more about that and the rest of my experience
+      in CV). During that time I have been improving my frontend skills as I am passionate about it. Given that my whole career
+      is based on self-learning, I dove into courses and started producing my own projects after some time. The last one was done
+      with React + Mobx + SASS, currently I am planning on one with React + Redux + CSS-in-JS. In my freetime I like to enjoy some
+      sport activities, usually on longboard, running or some indoor bouldering. In the colder times I am avidly watching Netflix.
+      I want to travel the world and already have some locations picked to visit next.   </p>
+    </div>
   </section>
 
   <section class="skills" id="skills">
