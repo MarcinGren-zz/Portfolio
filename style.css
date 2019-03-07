@@ -145,3 +145,93 @@
   height: 100px;
   width: 100px;
 }
+
+/* PROJECTS */
+.projects_row {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.project_container {
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  overflow: hidden;
+  height: 16vw;
+  width: 36vw;
+  margin: 15px;
+  transition: all 0.7s;
+}
+
+.project_container:hover {
+  transition: all 0.7s;
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.project-1 {
+  background-image: url('./files/projects/spotifyartistfinder.jpg');
+  background-color: black;
+}
+
+.project-2 {
+  background-image: url('./files/projects/omnifood.jpg');
+}
+
+.project-3 {
+  background-image: url('./files/projects/katorestaurants.jpg');
+}
+
+.project-4 {
+  background-image: url('./files/projects/colorgame.jpg');
+}
+
+.project-5 {
+  background-image: url('./files/projects/musicalkeyboard.JPG');
+}
+
+.project-6 {
+  background-image: url('./files/projects/todoapp.JPG');
+}
+
+.project-7 {
+  background-image: url('./files/projects/colorgame.jpg');
+}
+
+.project_reverse {
+  color: wheat;
+  text-align: center;
+  height: 100%;
+}
+
+.project_title {
+  font-size: 2.2vw;
+  padding-top: 1vw;
+}
+
+.links_container {
+  display: flex;
+  justify-content: center;
+  margin: 1vw 0;
+}
+
+.project_icon {
+  margin: auto 18px;
+  font-size: 4vw;
+}
+
+.projects_link:hover {
+  color: red;
+  transition: color 0.2s;
+}
+
+.project_desc {
+  font-size: 1.4vw;
+}
