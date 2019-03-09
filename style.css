@@ -1,7 +1,13 @@
+@media only screen and (min-width: 992px) {
+  *, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 
 a, a:hover {
@@ -9,9 +15,30 @@ a, a:hover {
   color: inherit;
 }
 
+section {
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+/* .about {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.5)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+.projects {
+  background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+.contact {
+  background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}  */
+
 /* NAVBAR */
 
-.nav_list { 
+.nav_list {
+  position: fixed;
   list-style-type: none;
   float: right;
   margin-right: 20px;
@@ -32,47 +59,45 @@ a, a:hover {
 }
 
 /* HEADER NAME + JOB TITLE */
+
 .home {
   background-color: black;
   z-index: 10;
 }
 
 .background-image {
-  background: 
-  linear-gradient(
-    rgba(255, 255, 255, 0.4), 
-    rgba(0, 0, 0, 0.8)
-  ),
-  url('./files/background.jpg');
+  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)), url('./files/background.jpg');
   background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
 }
 
 .home .header_cmn {
   width: 100%;
   padding: 0 12vw;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .home .header_name {
   padding-top: 10vw;
   font-size: 2.8em;
   letter-spacing: 0.1em;
+  align-items: flex-end;
+  height: 100%;
 }
 
 .home .header_title {
   /* background: #1b1b1b; */
   color: white;
-  height: 16vw;
+  height: 30vh;
   font-size: 2.4em;
   letter-spacing: 0.4em;
 }
 
 /* ABOUT SECTION */
+
 .title {
   text-align: center;
   padding-top: 20px;
@@ -90,7 +115,7 @@ a, a:hover {
 }
 
 .photo_container {
-  padding: 40px; 
+  padding: 40px;
 }
 
 .photo {
@@ -101,7 +126,7 @@ a, a:hover {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -117,6 +142,8 @@ a, a:hover {
 .about_text {
   width: 70%;
   margin: auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 .icons_column {
@@ -126,17 +153,12 @@ a, a:hover {
 }
 
 /* SKILLS */
-.skills_title {
 
-}
+.skills_title {}
 
-.skills_icons {
-  background: black;
-}
+.skills_icons {}
 
-.skill_container {
-
-}
+.skill_container {}
 
 .skills_row {
   display: flex;
@@ -147,11 +169,15 @@ a, a:hover {
 }
 
 .skill_image {
-  height: 100px;
-  width: 100px;
+  height: 16vw;
+  max-height: 8vw;
+  width: 16vw;
+  max-width: 8vw;
+  margin: 1vw;
 }
 
 /* PROJECTS */
+
 .projects_row {
   width: 90%;
   display: flex;
@@ -163,8 +189,8 @@ a, a:hover {
 
 .project_container {
   background-position: center;
-  background-repeat: no-repeat; 
-  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-size: 100%;
   overflow: hidden;
   height: 16vw;
   width: 36vw;
@@ -176,7 +202,7 @@ a, a:hover {
   transition: all 0.7s;
   background-size: 120%;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   overflow: hidden;
   opacity: 0.9;
 }
@@ -242,6 +268,7 @@ a, a:hover {
 }
 
 /* CONTACT */
+
 .contact_icons_container {
   display: flex;
   flex-direction: row;
