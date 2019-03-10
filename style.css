@@ -103,7 +103,7 @@ body {
   /* background: #1b1b1b; */
   color: white;
   height: 30vh;
-  font-size: 1.6vh;
+  font-size: 1.6vhf;
   letter-spacing: 0.4em;
 }
 
@@ -158,6 +158,12 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .about_icons {
+    width: 70%;
+  }
 }
 
 .icon_container {
@@ -383,9 +389,9 @@ body {
 } 
 
 .contact_icons_container {
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media only screen and (min-width: 992px) {
@@ -393,20 +399,24 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: nowrap;
+    margin: 30px 0;
   }
 }
 
 .contact_container {
   display: flex;
   flex-direction: row;
-  margin: 15px 5px;
-  justify-content: flex-end
+  margin: 15px 10px;
+  width: 80%;
+  letter-spacing: 0.2em;
 }
 
 @media only screen and (min-width: 992px) {
   .contact_container {
     width: 25vw;
-    
+    justify-content: center;  
+    margin: 20px 0px;
   }
 }
 
