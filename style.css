@@ -1,10 +1,12 @@
 /* @media only screen and (min-width: 992px) { */
-  *, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 /* } */
 
 * {
@@ -32,36 +34,125 @@ body {
   background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
 } */
 
-
-
 /* NAVBAR */
 
 .nav_container {
-  height: 8vh;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* height: 8vh; */
+  background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav_container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* height: 8vh; */
+  }
+}
+
+.burger {
+  align-self: flex-end;
+  margin: 15px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+@media only screen and (min-width: 992px) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger.open {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.burger.open:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger.open:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+  .hidden {
+    display: none;
+  }
 }
 
 .nav_list {
-  list-style-type: none;
-  margin-right: 20px;
-  text-align: center; 
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav_item {
-  display: inline-block;
-  padding: 8px 12px;
+  font-size: 1.4em;
+  margin: 15px 0;
 }
 
-.nav_item a {
-  color: orangered;
-  text-decoration: none
-}
-
-.nav_item:hover {
-  background-color: #898484;
+@media only screen and (min-width: 992px) {
+  .nav_list {
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+    float: right;
+    flex-direction: row
+  }
+  .nav_item {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 1em;
+    margin: 0;
+  }
+  .nav_item a {
+    color: orangered;
+    text-decoration: none
+  }
+  .nav_item:hover {
+    background-color: #898484;
+  }
 }
 
 /* HEADER NAME + JOB TITLE */
@@ -386,7 +477,7 @@ body {
 .contact {
   background-color: rgb(15, 15, 15);
   color: #D1D1D1;
-} 
+}
 
 .contact_icons_container {
   display: flex;
@@ -415,7 +506,7 @@ body {
 @media only screen and (min-width: 992px) {
   .contact_container {
     width: 25vw;
-    justify-content: center;  
+    justify-content: center;
     margin: 20px 0px;
   }
 }
@@ -438,5 +529,5 @@ footer {
   background-color: rgb(15, 15, 15);
   color: #D1D1D1;
   text-align: center;
-  padding-top: 40px; 
+  padding-top: 40px;
 }
