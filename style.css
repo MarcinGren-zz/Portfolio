@@ -1,15 +1,8 @@
-/* @media only screen and (min-width: 992px) { */
-
 *, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-/* } */
-
-* {
   font-family: 'Roboto Slab', serif;
 }
 
@@ -26,14 +19,6 @@ body {
   background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
 }
 
-/* .about {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.5)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
-}
-
-.projects {
-  background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
-} */
-
 /* NAVBAR */
 
 .nav_container {
@@ -43,6 +28,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 
 @media only screen and (min-width: 992px) {
@@ -445,6 +431,10 @@ body {
   color: wheat;
   text-align: center;
   height: 100%;
+}
+
+.hide_project {
+  display: none;
 }
 
 .project_title {

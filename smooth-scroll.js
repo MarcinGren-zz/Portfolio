@@ -7,6 +7,8 @@ function scrollHrefIntoView() {
     behavior: 'smooth',
     block: 'start'
   })
+  // from toggle-navbar.js - having to write that kinda sucks but want to keep it simple with just a few small js files
+  toggleNavbar()
 }
 
 navItems.forEach(item => item.addEventListener('click', scrollHrefIntoView))
