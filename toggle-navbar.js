@@ -1,5 +1,5 @@
-var burger = document.querySelector('.burger');
-var navbar = document.querySelector('.navigation_nav')
+const burger = document.querySelector('.burger');
+const navbar = document.querySelector('.navigation_nav')
 
 function toggleNavbar() {
   burger.classList.toggle('open')
