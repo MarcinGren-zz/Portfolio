@@ -33,7 +33,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .nav_container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(150, 150, 150, 0.5);
     /* height: 8vh; */
   }
 }
@@ -42,6 +42,7 @@ body {
   align-self: flex-end;
   margin: 15px;
   border: 0;
+  outline: none;
   background: none;
   cursor: pointer;
   border-bottom: 4px solid currentColor;
@@ -133,8 +134,10 @@ body {
     margin: 0;
   }
   .nav_item a {
-    color: orangered;
-    text-decoration: none
+    color: #B40A0A;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
   }
   .nav_item:hover {
     background-color: #898484;
@@ -164,7 +167,7 @@ body {
 
 .home .header_name {
   padding-top: 10vw;
-  font-size: 2.6vh;
+  font-size: 5vw;
   letter-spacing: 0.1em;
   align-items: flex-end;
   height: 100%;
@@ -172,7 +175,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .home .header_name {
-    font-size: 2.8em;
+    font-size: 4vw;
   }
 }
 
@@ -180,13 +183,13 @@ body {
   /* background: #1b1b1b; */
   color: white;
   height: 30vh;
-  font-size: 1.6vhf;
+  font-size: 4vw;
   letter-spacing: 0.4em;
 }
 
 @media only screen and (min-width: 992px) {
   .home .header_title {
-    font-size: 2.4em;
+    font-size: 3vw;
   }
 }
 
@@ -206,17 +209,29 @@ body {
   margin: auto;
   justify-content: space-around;
   flex-direction: column;
+  background: linear-gradient(black,black) bottom no-repeat;
+  background-size: 30% 2px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about_container {
+    flex-direction: row;
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .about_container {
     flex-direction: row;
-    width: 50%;
+    width: 55%;
   }
 }
 
 .photo_container {
   text-align: center;
+  padding: 20px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -235,11 +250,18 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  /* background: linear-gradient(black,black) bottom no-repeat;
+  background-size: 30% 2px;
+  padding-bottom: 10px;
+  margin-bottom: 20px; */
 }
 
 @media only screen and (min-width: 992px) {
   .about_icons {
     width: 70%;
+    /* background-size: 0;
+    padding-bottom: 0;
+    margin-bottom: 0; */
   }
 }
 
@@ -255,7 +277,7 @@ body {
 .about_text {
   width: 70%;
   margin: auto;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   margin-bottom: 15px;
 }
 
@@ -269,7 +291,13 @@ body {
 
 .info_counters {
   background-color: rgb(15, 15, 15);
-  height: 60vh;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 992px) {
+  .info_counters {
+    height: 60vh;
+  }
 }
 
 .counters_container {
@@ -344,19 +372,25 @@ body {
   padding: 0 12vw;
   margin-top: 20px;
 }
+@media only screen and (min-width: 992px) {
+  .skills_row {
+    padding: 0 24vw;
+  }
+}
 
 .skill_image {
   height: 16vw;
-  max-height: 8vw;
+  max-height: 14vw;
   width: 16vw;
-  max-width: 8vw;
+  max-width: 14vw;
   margin: 1vw;
 }
 
 @media only screen and (min-width: 992px) {
   .skill_image {
-    max-height: 16vw;
-    max-width: 16vw;
+    height: 8vw;
+    width: 8vw;
+    margin: 0.4vw;
   }
 }
 
@@ -395,7 +429,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  opacity: 0.9;
 }
 
 .project-1 {
@@ -431,6 +464,8 @@ body {
   color: wheat;
   text-align: center;
   height: 100%;
+  background-color: rgba(180, 10, 10, 0.5);
+  transition: all 0.2s;
 }
 
 .hide_project {
@@ -438,8 +473,15 @@ body {
 }
 
 .project_title {
-  font-size: 2.2vw;
-  padding-top: 1vw;
+  font-size: 4vw;
+  padding-top: 3vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .project_title {
+    font-size: 2.2vw;
+    padding-top: 1vw;
+  }
 }
 
 .links_container {
@@ -450,16 +492,28 @@ body {
 
 .project_icon {
   margin: auto 18px;
-  font-size: 4vw;
+  font-size: 8vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .project_icon {
+    font-size: 4vw;
+  }
 }
 
 .projects_link:hover {
-  color: red;
+  color: black;
   transition: color 0.2s;
 }
 
 .project_desc {
-  font-size: 1.4vw;
+  font-size: 3vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .project_desc {
+    font-size: 1.4vw;
+  }
 }
 
 /* CONTACT */
