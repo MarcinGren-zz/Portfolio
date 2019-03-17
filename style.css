@@ -174,7 +174,7 @@ body {
 }
 
 .background-image {
-  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(30, 30, 30, 0.8)), url('./files/bottom.jpg');
+  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(30, 30, 30, 0.8)), url('./files/top-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
