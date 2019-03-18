@@ -6,6 +6,24 @@
   font-family: 'Roboto Slab', serif;
 }
 
+body {
+  background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 a, a:hover {
   text-decoration: none;
   color: inherit;
@@ -13,10 +31,6 @@ a, a:hover {
 
 section {
   margin: 0 auto;
-}
-
-body {
-  background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
 }
 
 /* NAVBAR */
@@ -178,6 +192,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   height: 70vh;
 }
 
@@ -403,14 +420,6 @@ a .icon_container:hover {
 .skills_icons {}
 
 .skill_container {}
-
-.skill_hidden{
-  display: none;
-}
-
-.skill_image.skill_toggled {
-  height: 50%;
-}
 
 .skills_row {
   display: flex;
