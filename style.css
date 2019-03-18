@@ -10,20 +10,6 @@ body {
   background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url('./files/textbackground.png');
 }
 
-body:after{
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 a, a:hover {
   text-decoration: none;
   color: inherit;
@@ -242,7 +228,6 @@ section {
 }
 
 .home .header_title {
-  /* background: #1b1b1b; */
   color: white;
   height: 30vh;
   font-size: 4vw;
@@ -312,18 +297,11 @@ section {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  /* background: linear-gradient(black,black) bottom no-repeat;
-  background-size: 30% 2px;
-  padding-bottom: 10px;
-  margin-bottom: 20px; */
 }
 
 @media only screen and (min-width: 992px) {
   .about_icons {
     width: 70%;
-    /* background-size: 0;
-    padding-bottom: 0;
-    margin-bottom: 0; */
   }
 }
 
@@ -429,12 +407,6 @@ a .icon_container:hover {
 
 /* SKILLS */
 
-.skills_title {}
-
-.skills_icons {}
-
-.skill_container {}
-
 .skills_row {
   display: flex;
   flex-direction: row;
@@ -455,11 +427,6 @@ a .icon_container:hover {
   max-width: 14vw;
   margin: 1vw;
 }
-
-/* .skill_image:hover {
-  height: 40%;
-  transition: all 0.3s;
-} */
 
 @media only screen and (min-width: 992px) {
   .skill_image {
