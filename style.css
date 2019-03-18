@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+  background: linear-gradient( rgba(180, 180, 180, 0.5), rgba(110, 110, 110, 0.6)), url('./files/textbackground.png');
 }
 
 body:after{
@@ -196,6 +196,20 @@ section {
   -webkit-background-size: cover;
   -o-background-size: cover;
   height: 70vh;
+}
+
+.background-image:after{
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home .header_cmn {
