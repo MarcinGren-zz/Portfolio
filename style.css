@@ -502,6 +502,10 @@ a .icon_container:hover {
   background-image: url('./files/projects/portfolio.JPG');
 }
 
+.project-8 {
+  background-image: url('./files/projects/tripplanner.JPG');
+}
+
 .project_reverse {
   color: wheat;
   text-align: center;
